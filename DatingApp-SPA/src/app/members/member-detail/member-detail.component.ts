@@ -34,6 +34,8 @@ export class MemberDetailComponent implements OnInit {
       }
     ];
     this.galleryImages = this.getImages();
+
+    console.log(this.user);
   }
 
   getImages() {
@@ -49,12 +51,12 @@ export class MemberDetailComponent implements OnInit {
     return imageUrls;
   }
 
-  loadUser() {
-    this.userService.getUser(+this.route.snapshot.params['id']).subscribe((user: User) => {
-      this.user = user;
-    }, error => {
-      this.alerty.error(error);
-    });
-  }
+  // loadUser() {
+  //   this.userService.getUser(+this.route.snapshot.params['id']).subscribe((user: User) => {
+  //     this.user = user;
+  //   }, error => {
+  //     this.alerty.error(error);
+  //   });
+  // }
 
 }
