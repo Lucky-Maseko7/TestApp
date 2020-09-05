@@ -12,6 +12,10 @@ using DatingApp.API.Model;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
+<<<<<<< HEAD
+=======
+using System.Linq;
+>>>>>>> 43f05787e008430f674417c5138ac4f3190771ca
 
 namespace DatingApp.API.Controllers
 {

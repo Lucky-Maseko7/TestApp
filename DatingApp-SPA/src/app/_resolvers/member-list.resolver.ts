@@ -1,4 +1,8 @@
+<<<<<<< HEAD
  import { Injectable } from '@angular/core';
+=======
+import { Injectable } from '@angular/core';
+>>>>>>> 43f05787e008430f674417c5138ac4f3190771ca
 import { Resolve, Router, ActivatedRouteSnapshot } from '@angular/router';
 
 import { UserService } from '../_services/user.service';

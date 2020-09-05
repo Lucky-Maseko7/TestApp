@@ -3,8 +3,11 @@ using System.Threading.Tasks;
 using DatingApp.API.Model;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
+<<<<<<< HEAD
 using DatingApp.API.Halpers;
 using System;
+=======
+>>>>>>> 43f05787e008430f674417c5138ac4f3190771ca
 
 namespace DatingApp.API.Data
 {

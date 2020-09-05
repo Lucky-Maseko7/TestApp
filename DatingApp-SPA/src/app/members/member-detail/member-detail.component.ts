@@ -34,6 +34,11 @@ export class MemberDetailComponent implements OnInit {
       }
     ];
     this.galleryImages = this.getImages();
+<<<<<<< HEAD
+=======
+
+    console.log(this.user);
+>>>>>>> 43f05787e008430f674417c5138ac4f3190771ca
   }
 
   getImages() {
