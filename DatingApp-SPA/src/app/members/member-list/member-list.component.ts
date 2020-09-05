@@ -1,17 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-<<<<<<< HEAD
 import { ActivatedRoute } from '@angular/router';
 
 import { Pagination, PaginatedResult } from '../../_models/pagination';
 import { User } from '../../_models/user';
 import { UserService } from '../../_services/user.service';
 import { AlertifyService } from '../../_services/alertify.service';
-=======
-import { User } from '../../_models/user';
-import { UserService } from '../../_services/user.service';
-import { AlertifyService } from '../../_services/alertify.service';
-import { ActivatedRoute } from '@angular/router';
->>>>>>> 43f05787e008430f674417c5138ac4f3190771ca
 
 @Component({
   selector: 'app-member-list',
