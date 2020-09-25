@@ -142,6 +142,5 @@ namespace DatingApp.API.Controllers
 
             return NoContent();
         }
-
     }
 }
