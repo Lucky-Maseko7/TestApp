@@ -12,7 +12,6 @@ using DatingApp.API.Model;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
-using System.Linq;
 
 namespace DatingApp.API.Controllers
 {
@@ -80,7 +79,7 @@ namespace DatingApp.API.Controllers
                 }
             }
 
-            photoForCreationDto.Url = uploadResult.Uri.ToString();
+            photoForCreationDto.Url = uploadResult.Url.ToString();
             photoForCreationDto.PublicId = uploadResult.PublicId;
 
             var photo = _mapper.Map<Photo>(photoForCreationDto);
@@ -94,7 +93,7 @@ namespace DatingApp.API.Controllers
             {
                 var photoToReturn = _mapper.Map<PhotoForReturnDto>(photo);
 
-                return CreatedAtRoute("GetPhoto", new { id = photo.Id}, photoToReturn);
+                return CreatedAtRoute("GetPhoto", new {userId, id = photo.Id}, photoToReturn);
             }
 
             return BadRequest("Could not add the photo");
